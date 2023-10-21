@@ -25,11 +25,6 @@ With the above prerequisites installed, open a **Git Bash terminal**.
 First, use `cd` to change directories to the place where you want to download LT. 
 - `cd ~/Desktop/<path where you want to put the LT source>`
 
-Before doing any other `git` commands, make sure LFS is installed:
-- `git lfs install`
-
-You should see `Git LFS initialized` or a similar message. **Important**: if you forget to install and initialize Git LFS, most of the resources will probably be broken, and the whole process will likely fail in strange and mysterious ways. This is a common gotcha with projects that use LFS. Make sure you do the above step!
-
 Now, you can download the repository:
 
 - `git clone --recursive https://github.com/JoshParnell/ltheory-old.git ltheory-old`
@@ -70,7 +65,6 @@ Open Git Bash. Each line below is one command, some of which will take a while t
 
 ```
 cd ~/Desktop
-git lfs install
 git clone --recursive https://github.com/JoshParnell/ltheory-old.git ltheory-old
 cd ltheory-old
 python configure.py
